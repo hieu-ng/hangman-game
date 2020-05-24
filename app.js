@@ -10,3 +10,16 @@ const figureParts = document.querySelectorAll('.figure-part');
 const words = ['application', 'programming', 'interface', 'wizard'];
 
 let selectedWord = words.[Math.floor(Math.random() * word.length)];
+
+const correctLetters = [];
+const wrongLetters = [];
+
+function displayWord() {
+  wordEl.innerHTML =
+    `
+  ${selectedWord
+    .split('')
+    .map(letter => `<span class="letter">
+    ${correctLetters.includes(letter) ? letter : ''}
+    <span>`)}`
+}
