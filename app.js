@@ -24,7 +24,12 @@ function displayWord() {
     <span>`)
     .join('')}`;
 
-    const innerWord = wordEl.innerText.replace(/\n/,'')
+    const innerWord = wordEl.innerText.replace(/\n/,'');
+
+    if (innerWord === selectedWord) {
+        finalMessage.innerText = 'Congrats!';
+        popup.style.display = 'flex';
+    }
 
 }
 
