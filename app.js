@@ -107,5 +107,3 @@ playAgainBtn.addEventListener('click', () => {
 
 displayWord();
 
-
-displayWord();
