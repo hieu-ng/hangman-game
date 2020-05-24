@@ -21,5 +21,11 @@ function displayWord() {
     .split('')
     .map(letter => `<span class="letter">
     ${correctLetters.includes(letter) ? letter : ''}
-    <span>`)}`
+    <span>`)
+    .join('')}`;
+
+    const innerWord = wordEl.innerText.replace(/\n/,'')
+
 }
+
+displayWord();
